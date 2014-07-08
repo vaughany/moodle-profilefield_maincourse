@@ -2,10 +2,12 @@
 
 This plugin adds a drop-down menu option to the customisable user profile fields, showing a list of courses that user is enrolled on. The user can select the course which is considered to be the 'main' programme of study.
 
+
 ## Installation. 
 
 * If you cloned the repo, rename the folder called moodle-profilefield_maincourse to maincourse
 * if you downloaded a Zipped archive of the repository, extract the folder with the name s
+
 
 ## How to use
 
@@ -32,13 +34,16 @@ Now each user can choose their main course from their profile page:
 * Click Administration -> Edit profile
 * Scroll to the section Other Settings (or if you created your own section, that one).
 * Choose a course from the drop-down menu.
+* Save the settings.
+* On the profile view page which follows, you'll see a new entry similar to "Main Course: Internet Security (IS001)".
 
 
 ## To do
 
-* Only show student enrolments, not teacher, manager etc? (This doesn't duplicate entries in the menu, but they probably shouldn't be there.)
+* Only show student roles, not teacher, manager etc? (This doesn't duplicate entries in the menu, but they probably shouldn't be there.)
 * Ignore certain course IDs.
 * Make the above be configurable.
+
 
 ## Bugs
 
