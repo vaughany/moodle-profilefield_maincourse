@@ -73,9 +73,22 @@ class profile_field_maincourse extends profile_field_base {
             }
         }
 
-        // Remove any courses we don't want appearing in this list. Hard-coded for now.
-        foreach ($options as $option) {
-
+        // Remove any courses we don't want appearing in this list.
+        // Notes: Hard-coded for now; specific to live Moodle only.
+        $dontshow = array(
+            685,    // Computer Services
+            490,    // E & D Zone
+            78,     // Helpzone
+            277,    // Learning Resources (LTRS)
+            870,    // SDC e-Library
+            660     // Student Union
+        );
+        foreach ($options as $key => $option) {
+            foreach ($dontshow as $ds) {
+                if ($key == $ds) {
+                    unset($options[$key]);
+                }
+            }
         }
 
         $this->options = array();
