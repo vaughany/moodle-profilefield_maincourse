@@ -23,5 +23,3 @@
  */
 
 $string['pluginname'] =     'Main Course menu';
-$string['maincourse'] =     'Main course';
-$string['maincoursedesc'] = 'Choose your main course from those you are enroled on.';
